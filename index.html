@@ -5,11 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Smartphone Shop</title>
+
+    <style>
+        body {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 15px;
+            background-color: gainsboro
+        }
+
+        .pink-body {
+            background-color: pink;
+        }
+
+    </style>
+
 </head>
-<body style="background-color: gainsboro;">
+
+<body>
+
     <button onclick="changeBgColor()">
-    Change Background Color to Pink
+    Toggle pink background color on Body
     </button>
+    
     <div>
         <h1>Acqua Alta Smartphone Shop</h1>
         <button onclick="changeH1ToSthElse('Hello')">
@@ -94,7 +112,11 @@ function changeH1ToSthElse(newH1) {
 }
 
 function changeBgColor() {
-    document.body.style.backgroundColor = "pink";    
+    let bgNodes = document.getElementsByTagName('style');
+    for (let i = 0; i < bgNodes.length; i++) {
+        let bgNode = bgNodes[i]
+        bgNode.classList.toggle('pink-body')
+    }    
 }
 
 function changeFooter(newFooter) {
