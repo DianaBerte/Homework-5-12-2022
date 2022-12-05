@@ -7,6 +7,9 @@
     <title>Smartphone Shop Website</title>
 </head>
 <body style="background-color: gainsboro;">
+    <button onclick="changeBgColor()">
+    Change Background Color to Pink
+    </button>
     <div>
         <h1>Diana's Smartphone Shop Website</h1>
         <button onclick="changeH1ToSthElse('Hello')">
@@ -69,6 +72,10 @@
 function changeH1ToSthElse(newH1) {
     let h1Node = document.querySelector('h1')
     h1Node.innerText = newH1
+}
+
+function changeBgColor() {
+    document.body.style.backgroundColor = "pink";    
 }
 
 
