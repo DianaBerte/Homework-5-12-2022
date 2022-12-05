@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smartphone Shop Website</title>
+</head>
+<body>
+    <div>
+        <h1>Diana's Smartphone Shop Website</h1>
+        <button onclick="changeH1ToSthElse('Hello')">
+        Change h1 to "Hello"
+        </button>
+    </div>
+
+    <div>
+        <table>
+            <thead>
+                <tr>
+                    <th scope="col">Samsung Smartphone</th>
+                    <th scope="col">Image</th>
+                    <th scope="col">Title</th>
+                    <th scope="col">Description</th>
+                    <th scope="col">Price</th>
+                </tr>
+                <tr>
+                    <th scope="row">Samsung Galaxy M13</th>
+                    <td><img src="https://m.media-amazon.com/images/I/81PCqWLd8nL._AC_UL320_.jpg" alt="Samsung Galaxy M13"></td>
+                    <td>Samsung Galaxy M13 Smartphone Android</td>
+                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, officia tempora eum facilis culpa dolor.</td>
+                    <td>198,32 eur</td>            
+                </tr>
+                <tr>
+                    <th scope="row">Samsung Galaxy A23</th>
+                    <td><img src="https://m.media-amazon.com/images/I/811RigwuTyL._AC_UL320_.jpg" alt="Samsung Galaxy A23"></td>
+                    <td>Samsung Galaxy A23 5G Smartphone Android 12</td>
+                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, officia tempora eum facilis culpa dolor.</td>
+                    <td>231,52 eur</td>  
+                </tr>
+                <tr>
+                    <th scope="row">Samsung Galaxy A13</th>
+                    <td><img src="https://m.media-amazon.com/images/I/81Jv1WAyl4L._AC_UL320_.jpg" alt="Samsung Galaxy A13"></td>
+                    <td>Samsung Galaxy A13 Smartphone Android</td>
+                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, officia tempora eum facilis culpa dolor.</td>
+                    <td>171,00 eur</td> 
+                </tr>
+                <tr>
+                    <th scope="row">Samsung Galaxy A33</th>
+                    <td><img src="https://m.media-amazon.com/images/I/812OLyEllsL._AC_UL320_.jpg" alt="Samsung Galaxy A33"></td>
+                    <td>SAMSUNG Galaxy A33 5G Smartphone Android</td>
+                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, officia tempora eum facilis culpa dolor.</td>
+                    <td>270,00 eur</td> 
+                </tr>
+                <tr>
+                    <th scope="row">Samsung Galaxy A04s</th>
+                    <td><img src="https://m.media-amazon.com/images/I/81GY5RgdLyL._AC_UL320_.jpg" alt="Samsung Galaxy A04s"></td>
+                    <td>Samsung Galaxy A04s Smartphone Android 12</td>
+                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, officia tempora eum facilis culpa dolor.</td>
+                    <td>132,99 eur</td> 
+                </tr>
+            </thead>
+            <tbody>
+                
+            </tbody>
+        </table>
+    </div>
+<script>
+function changeH1ToSthElse(newH1) {
+    let h1Node = document.querySelector('h1')
+    h1Node.innerText = newH1
+}
+
+
+
+
+
+</script>
+
+
+</body>
+</html>
