@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Smartphone Shop Website</title>
+    <title>Smartphone Shop</title>
 </head>
 <body style="background-color: gainsboro;">
     <button onclick="changeBgColor()">
     Change Background Color to Pink
     </button>
     <div>
-        <h1>Diana's Smartphone Shop Website</h1>
+        <h1>Acqua Alta Smartphone Shop</h1>
         <button onclick="changeH1ToSthElse('Hello')">
-        Change h1 to "Hello"
+        Change the Page Title to "Hello"
         </button>
     </div>
 
@@ -64,13 +64,26 @@
                 </tr>
             </thead>
             <tbody>
-                
             </tbody>
         </table>
+        <div>
+            <br>
+            <footer>
+                <p>Acqua Alta Smartphone Shop</p>
+                <p>Fondamenta Nove 42/b</p>
+                <p>Venice, Italy</p>
+                <button onclick="changeFooter('High Tide Smartphone Shop, Strada Nuova 12, Venezia, Italy')">
+                Change the Footer
+                </button>
+            </footer>
+            <br>
+        </div>
     </div>
+
 <script>
+
 function changeH1ToSthElse(newH1) {
-    let h1Node = document.querySelector('h1')
+    let h1Node = document.querySelector('h1');
     h1Node.innerText = newH1
 }
 
@@ -78,9 +91,10 @@ function changeBgColor() {
     document.body.style.backgroundColor = "pink";    
 }
 
-
-
-
+function changeFooter(newFooter) {
+    let footerNode = document.querySelector('footer');
+    footerNode.innerText = newFooter
+}
 
 </script>
 
